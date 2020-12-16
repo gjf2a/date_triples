@@ -14,3 +14,7 @@ def pythagorean_dates(start_year, end_year):
                 if pythagorean_triple(day, month, year % 100):
                     dates.append((day, month, year))
     return dates
+
+
+if __name__ == "__main__":
+    print(pythagorean_dates(2000, 2099))
